@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
+        app:cardCornerRadius="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/countrySt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COUNTRY: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Denmark"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/countrySt"
+                    app:layout_constraintStart_toEndOf="@id/countrySt"
+                    app:layout_constraintTop_toTopOf="@id/countrySt" />
+
+                <TextView
+                    android:id="@+id/latitudeLongitudeSt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="(latitude: 56, longitude: 10)"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/countrySt"/>
+
+                <TextView
+                    android:id="@+id/schemeSt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SCHEME: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/latitudeLongitudeSt" />
+
+                <TextView
+                    android:id="@+id/scheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/schemeSt"
+                    app:layout_constraintStart_toEndOf="@id/schemeSt"
+                    app:layout_constraintTop_toTopOf="@id/schemeSt"
+                    android:textSize="18sp"
+                    tools:text="Visa" />
+
+                <TextView
+                    android:id="@+id/BankSt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BANK: "
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/schemeSt" />
+
+                <TextView
+                    android:id="@+id/nameBank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/BankSt"
+                    app:layout_constraintStart_toEndOf="@id/BankSt"
+                    app:layout_constraintTop_toTopOf="@id/BankSt"
+                    android:textSize="18sp"
+                    tools:text="Jyske Bank, Hjørring" />
+
+                <TextView
+                    android:id="@+id/emailBank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/nameBank"
+                    app:layout_constraintEnd_toEndOf="@id/nameBank"
+                    app:layout_constraintTop_toBottomOf="@id/nameBank"
+                    android:textSize="18sp"
+                    tools:text="www.jyskebank.dk" />
+
+                <TextView
+                    android:id="@+id/phoneBank"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/emailBank"
+                    app:layout_constraintEnd_toEndOf="@id/emailBank"
+                    app:layout_constraintTop_toBottomOf="@id/emailBank"
+                    android:textSize="18sp"
+                    tools:text="+4589893300" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

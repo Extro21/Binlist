@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.binInfo.BinInfoFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="12dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/content_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="12dp" />
+
+    <EditText
+        android:id="@+id/searchId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:hint="@string/enter_the_first_digits"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:maxLength="8"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="@id/content_end"
+        app:layout_constraintStart_toStartOf="@id/content_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/countrySt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="COUNTRY: "
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/content_start"
+        app:layout_constraintTop_toBottomOf="@id/searchId" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/countrySt"
+        app:layout_constraintStart_toEndOf="@id/countrySt"
+        app:layout_constraintTop_toTopOf="@id/countrySt"
+        tools:text="Denmark" />
+
+    <TextView
+        android:id="@+id/latitudeLongitudeSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="@id/content_start"
+        app:layout_constraintTop_toBottomOf="@id/countrySt"
+        tools:text="(latitude: 56, longitude: 10)" />
+
+    <TextView
+        android:id="@+id/schemeSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/scheme"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/content_start"
+        app:layout_constraintTop_toBottomOf="@id/latitudeLongitudeSt" />
+
+    <TextView
+        android:id="@+id/scheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/schemeSt"
+        app:layout_constraintStart_toEndOf="@id/schemeSt"
+        app:layout_constraintTop_toTopOf="@id/schemeSt"
+        tools:text="Visa" />
+
+    <TextView
+        android:id="@+id/BankSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bank"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/content_start"
+        app:layout_constraintTop_toBottomOf="@id/schemeSt" />
+
+    <TextView
+        android:id="@+id/nameBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/BankSt"
+        app:layout_constraintStart_toEndOf="@id/BankSt"
+        app:layout_constraintTop_toTopOf="@id/BankSt"
+        tools:text="Jyske Bank, Hjørring" />
+
+    <TextView
+        android:id="@+id/emailBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/nameBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/nameBank"
+        app:layout_constraintTop_toBottomOf="@id/nameBank"
+        tools:text="www.jyskebank.dk" />
+
+    <TextView
+        android:id="@+id/phoneBank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/emailBank"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/emailBank"
+        app:layout_constraintTop_toBottomOf="@id/emailBank"
+        tools:text="+4589893300" />
+
+    <TextView
+        android:id="@+id/placeholderMessage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="26sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ошибка"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
