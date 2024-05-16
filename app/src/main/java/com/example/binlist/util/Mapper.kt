@@ -1,4 +1,4 @@
-package com.example.binlist
+package com.example.binlist.util
 
 import com.example.binlist.data.room.entities.HistoryItem
 import com.example.binlist.domain.models.BinInfoItem

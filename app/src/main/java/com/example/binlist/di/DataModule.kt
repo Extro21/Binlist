@@ -1,7 +1,7 @@
 package com.example.binlist.di
 
 import androidx.room.Room
-import com.example.binlist.Mapper
+import com.example.binlist.util.Mapper
 import com.example.binlist.data.impl.BinInfoRepositoryImpl
 import com.example.binlist.data.network.NetworkClient
 import com.example.binlist.data.network.RetrofitNetworkClient

@@ -1,7 +1,7 @@
 package com.example.binlist.data.impl
 
 import android.content.Context
-import com.example.binlist.Mapper
+import com.example.binlist.util.Mapper
 import com.example.binlist.R
 import com.example.binlist.data.network.BinInfoRequest
 import com.example.binlist.data.network.BinInfoResponse
